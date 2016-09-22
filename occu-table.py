@@ -28,7 +28,7 @@ def what():
 
 @app.route('/occupations')
 def occ():
-    render_template('occu-table.html') #, tab = occDict, ran = randOcc())
+    return render_template('occu-table.html') #, tab = occDict, ran = randOcc())
 
 if __name__ == '__main__':
     app.debug = True
