@@ -12,8 +12,15 @@
     <table>
       <tr>
 	<td><b>Job Class </b></td>
-	<td><b>Percentages </b> </td>
+	<t> <td><b><pre>Percentages</pre></b> </td>
       </tr>
+      {% for item in tab %}
+      <tr>
+	<td> {{item}} </td>
+	<td><pre>{{tab[item]}}</pre></td>
+      </tr>
+      {% endfor %}
     </table>
+    <p> You should have a job in the {{ran}} industry!!! Or not. Don't let a website tell you what to do with your life. </p>
   </body>
 </html>
