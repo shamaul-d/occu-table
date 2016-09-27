@@ -15,7 +15,8 @@ def randOcc():
     from random import randint
     p = randint(0,1000)
     t = 0
-    for key in tab():
-        t += occDict[key]
+    l = tab()
+    for key in l:
+        t += l[key]
         if (t * 10) >= p:
             return key
